@@ -39,3 +39,15 @@ $( window ).resize(function() {
 	setTimeout(function() { beReadyPage();}, 100);
 	return;
 });
+
+
+function areyoudumm(temp) {
+	if(temp) {
+		$(".main_box_bottom_2").css("display", "flex");
+		$(".main_box_bottom").css("display", "none");
+		$(".main_box_top").css("display", "none");
+	} else {
+		$("#false_button").css("left", Math.random() * ($(".false_button_area").width() - $("#false_button").width()));
+		$("#false_button").css("top", Math.random() * ($(".false_button_area").height() - $("#false_button").height()));
+	}
+}
